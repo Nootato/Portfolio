@@ -1,0 +1,53 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: black;
+}
+
+body {
+    display: grid;
+    grid-template-rows: auto 1fr;
+}
+
+header {
+    text-align: center;
+}
+
+h1 {
+    padding-top: 3vh;
+    font-size: 20vw;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+}
+
+#start-button {
+    position: absolute;
+    top: calc(50vh - 25vw);
+    height: 50vw;
+    width: 50vw;
+
+    border: none;
+    border-radius: 50%;
+    
+    background-color: #ffa500;
+    font-size: 2.5em;
+    font-weight: bold;
+    text-shadow: 3px 3px 10px #302000;
+
+    cursor: pointer;
+    transition: text-shadow 0.3s;
+}
+
+#start-button:hover {
+    text-shadow: none;
+}
+
+@media screen and (min-width: 480px) {
+    body {
+        
+    }
+}
