@@ -3,16 +3,56 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home Page</title>
-    <link rel="stylesheet" href="../css/index.css" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="../css/style.css" />
   </head>
   <body>
-    <header>
-      <h1>TodeDo</h1>
+    <header class="header">
+      <nav>
+        <div class="logo">Vinston Åsén</div>
+        <div class="nav-links">
+          <a href="#hero">Jag</a>
+          <a href="">CV</a>
+          <a href="">Personligt Brev</a>
+          <a href="">Länk4</a>
+        </div>
+        <button class="menu-toggle">☰</button>
+      </nav>
     </header>
 
-    <main>
-      <button id="start-button">Focus</button>
-    </main>
+    <div class="menu-mobile">
+      <button class="menu-close">✕</button>
+      <div class="mobile-links">
+        <a href="#hero">Jag</a>
+        <a href="">Länk2</a>
+        <a href="">Länk3</a>
+        <a href="">Länk4</a>
+      </div>
+    </div>
+
+    <div class="overlay"></div>
+
+    <section id="hero">
+      <img src="../img/CV-bild.jpg" alt="Bild På Vinston Åsén" id="pic-of-me" />
+    </section>
+
+    <footer>
+      <div class="footer-column">
+        <h3>Kontakter</h3>
+        <ul>
+          <li>
+            <a
+              href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=new"
+              >gmail@gmail.com</a
+            >
+          </li>
+          <li>+46 31-415 92 65</li>
+          <li>Adress: i Skogen</li>
+          <li>[Stad], Sverige 42069</li>
+        </ul>
+      </div>
+    </footer>
+
+    <script src="../js/index.js"></script>
   </body>
 </html>
