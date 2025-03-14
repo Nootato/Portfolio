@@ -1,0 +1,11 @@
+img {
+    margin: 15px;
+
+    border: 0.4rem var(--blue) solid;
+    border-radius: 50%;
+}
+
+#pic-of-me {
+    width: 45vw;
+    height: 45vw;
+}

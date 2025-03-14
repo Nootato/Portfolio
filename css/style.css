@@ -37,7 +37,7 @@ nav {
     padding: 1rem;
 }
 
-.logo {
+.name {
     font-weight: bold;
     font-size: 1.5rem;
 
@@ -132,17 +132,8 @@ nav {
     background-color: #0003;
 }
 
-img {
-    margin: 15px;
 
-    border: 0.4rem var(--blue) solid;
-    border-radius: 50%;
-}
-
-#pic-of-me {
-    width: 45vw;
-    height: 45vw;
-}
+/* FOOTER */
 
 footer {
     display: grid;
