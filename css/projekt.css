@@ -1,0 +1,75 @@
+:root {
+    --darkwhite: #f7f8f9;
+    --blue: #94B6D2;
+    --darkblue: #122433;
+    --gray: #314352;
+    --beige: #D1C092;
+}
+
+#projekt-h {
+    font-size: 2rem;
+    text-align: center;
+    color: var(--darkblue);
+    position: relative;
+    margin: 2rem 0 1rem;
+    padding-bottom: 1rem;
+}
+
+#projekt-h::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+
+    width: 8rem;
+    height: 0.2rem;
+    background-color: var(--blue);
+}
+
+section {
+    margin: 2rem 0 4rem;
+    padding: 2rem 0;
+    background-color: white;
+    box-shadow: 0 4px 6px #0002;
+}
+
+section h1 {
+    margin-left: 2rem;
+    color: var(--darkblue);
+    margin-bottom: 1rem;
+}
+
+iframe {
+    width: 100%;
+    height: calc(90vh - 3.5rem);
+    border: 0.5rem var(--blue) solid;
+    margin-bottom: 1.5rem;
+}
+
+section a {
+    margin-left: 2rem;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    color: var(--blue);
+    background-color: var(--darkblue);
+    transition: all 0.2s ease;
+}
+
+section a:hover {
+    color: var(--beige);
+    background-color: var(--gray);
+}
+
+@media (min-width: 640px) {
+    section {
+        margin: 2rem;
+        padding: 2rem;
+        border-radius: 0.5rem;
+    }
+
+    iframe {
+        border-radius: 0.5rem;
+    }
+}

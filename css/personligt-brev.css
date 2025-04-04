@@ -1,0 +1,54 @@
+:root {
+    --darkwhite: #f7f8f9;
+    --blue: #94B6D2;
+    --darkblue: #122433;
+    --gray: #314352;
+    --beige: #D1C092;
+}
+
+#personligt-brev {
+    max-width: 60rem;
+    margin: 2rem 0;
+    padding: 2rem 1rem;
+    background-color: white;
+    border-radius: 0.5rem;
+}
+
+#personligt-brev p {
+    margin-bottom: 1.5rem;
+    line-height: 1.75;
+    color: var(--gray);
+}
+
+#personligt-brev p:first-child {
+    font-size: 1.2rem;
+    color: var(--darkblue);
+    font-weight: bold;
+}
+
+#personligt-brev h1 {
+    font-size: 2rem;
+    text-align: center;
+    color: var(--darkblue);
+    position: relative;
+    padding-bottom: 1rem;
+}
+
+#personligt-brev h1::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 8rem;
+    height: 0.2rem;
+    background-color: var(--blue);
+}
+
+@media (min-width: 640px) {
+    #personligt-brev {
+        padding: 3rem 2rem;
+        margin: 2rem auto;
+        box-shadow: 0 0.25rem 0.5rem #0003;
+    }
+}

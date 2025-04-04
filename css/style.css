@@ -9,7 +9,6 @@
     --blue: #94B6D2;
     --darkblue: #122433;
     --gray: #314352;
-    --lightgray: #7C8891;
     --beige: #D1C092;
 }
 
@@ -35,6 +34,7 @@ nav {
     justify-content: space-between;
     align-items: center;
     padding: 1rem;
+    padding-right: 2rem;
 }
 
 .name {
@@ -50,14 +50,18 @@ nav {
 
 .nav-links a {
     text-decoration: none;
+    padding: 0.25rem 0.75rem;
     margin-left: 1.5rem;
-    transition: color 0.3s;
+    border-radius: 0.25rem;
+    transition: color 0.3s ease-in-out;
+    transition: background-color 0.3s ease;
 
     color: black;
 }
 
 .nav-links a:hover {
     color: var(--blue);
+    background-color: var(--darkblue);
 }
 
 .menu-toggle {
@@ -74,13 +78,14 @@ nav {
     position: fixed;
     top: 0;
     right: -100%;
-    width: 50%;
+    
+    width: auto;
     height: 100vh;
     z-index: 200;
+    
     padding: 2rem;
-
-    color: var(--darkwhite);
-    background-color: var(--lightgray);
+    color: white;
+    background-color: var(--gray);
     box-shadow: -5px 0 15px #0001;
     transition: right 0.3s ease;
 }
@@ -95,7 +100,7 @@ nav {
     right: 1rem;
     font-size: 1.5rem;
     cursor: pointer;
-
+    color: white;
     border: none;
     background: none;
 }
@@ -113,11 +118,7 @@ nav {
     font-size: 1.2rem;
 
     color: var(--darkwhite);
-    border-bottom: 1px solid var(--darkblue);
-}
-
-.mobile-links a:hover::after {
-    width: 100%;
+    border-bottom: 1px solid var(--darkwhite);
 }
 
 .overlay {
@@ -128,7 +129,7 @@ nav {
     width: 100%;
     height: 100%;
     z-index: 150;
-
+    backdrop-filter: blur(0.17rem);
     background-color: #0003;
 }
 
@@ -138,20 +139,22 @@ nav {
 footer {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 2rem;
+    gap: 1.5rem;
     padding: 3rem 1rem;
-
+    text-align: center;
     color: white;
     background-color: var(--darkblue);
 }
 
-
 .footer-column h3 {
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
     font-size: 1.5rem;
+    color: var(--beige);
 }
 
 footer ul {
+    display: grid;
+    grid-template-columns: 1fr;
     list-style: none;
 }
 
@@ -170,8 +173,7 @@ footer ul a:hover {
 }
 
 
-
-@media (min-width: 540px) {
+@media (min-width: 640px) {
     .menu-toggle {
         display: none;
     }
@@ -181,11 +183,12 @@ footer ul a:hover {
     }
 
     #pic-of-me {
-        max-width: 360px;
-        max-height: 360px;
+        max-width: 22.5rem;
+        max-height: 22.5rem;
     }
 
     footer {
-        grid-template-columns: repeat(3, 1fr);
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
     }
 }

@@ -1,132 +1,164 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sv">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CV</title>
     <link rel="stylesheet" href="../css/style.css" />
-    <link rel="stylesheet" href="../css/CV.css">
+    <link rel="stylesheet" href="../css/CV.css" />
   </head>
 
   <body>
-<header class="header">
-    <nav>
-      <div class="name">Vinston Åsén</div>
-      <div class="nav-links">
+    <header class="header">
+      <nav>
+        <div class="name">Vinston Åsén</div>
+        <div class="nav-links">
+          <a href="../index.html">Jag</a>
+          <a href="">CV</a>
+          <a href="../html/personligt-brev.html">Personligt Brev</a>
+          <a href="../html/projekt.html">Projekt</a>
+        </div>
+        <button class="menu-toggle">☰</button>
+      </nav>
+    </header>
+
+    <div class="menu-mobile">
+      <button class="menu-close">✕</button>
+      <div class="mobile-links">
         <a href="../index.html">Jag</a>
         <a href="">CV</a>
         <a href="../html/personligt-brev.html">Personligt Brev</a>
-        <a href="">Länk4</a>
+        <a href="../html/projekt.html">Projekt</a>
       </div>
-      <button class="menu-toggle">☰</button>
-    </nav>
-  </header>
-
-  <div class="menu-mobile">
-    <button class="menu-close">✕</button>
-    <div class="mobile-links">
-      <a href="../index.html">Jag</a>
-      <a href="">CV</a>
-      <a href="../html/personligt-brev.html">Personligt Brev</a>
-      <a href="">Länk4</a>
     </div>
-  </div>
 
-  <div class="overlay"></div>
+    <div class="overlay"></div>
 
     <section id="CV">
-      <section id="utbildningar">
-        <h1>UTBILDNINGAR</h1>
-        <div id="NTI">
-          <h2>NTI Johanneberg - Gymnasium</h2>
-          <p>
-            2023 - pågående
-            <br />
-            <h3>Teknikprogrammet</h3>
-            <b>Programtyp</b>: Högskoleförberedande
-            <br />
-            <b>Inriktning</b>: Informations- och medieteknik
-            <br />
-            <b>Fördjupning</b>: Science
-            <br />
-          </p>
-        </div>
+      <section>
+        <h1>Utbildningar</h1>
 
-        <hr>
+        <div id="utbildningarContent">
+          <div id="NTI">
+            <h2>NTI Johanneberg - Gymnasium</h2>
+            <div>
+              2023 - pågående
+              <br />
+              <h3>Teknikprogrammet</h3>
+              <b>Programtyp</b>: Högskoleförberedande
+              <br />
+              <b>Inriktning</b>: Informations- och medieteknik
+              <br />
+              <b>Fördjupning</b>: Science
+              <br />
+            </div>
+          </div>
+          <img
+            src="../img/NTIJohanneberg.jpg"
+            alt="NTI Johanneberg"
+            id="NTI-img"
+          />
 
-        <div id="IESJ">
-          <h2>IES Johanneberg - Högstadium</h2>
-          <p>
-            2020 - 2023
-            <br>
-            <b>Årskurs:</b> 7 - 9
-            <br>
-            Stor del engelsk undervisning
-            <br>
-            <b>Slutmerit:</b> 302,5
-          </p>
-        </div>
-        
-        <hr />
+          <hr />
 
-        <div id="IESK">
-          <h2>IES Krokslätt - Grundskola</h2>
-          <p>
-            2016 - 2020
-            <br>
-            <b>Årskurs:</b> 3 - 6 
-            <br> 
-            Del av undervisningen på engelska.
-          </p>
-        </div>
-        </section>
-      
-      <hr />
-      
-      <section id="arbetserfarenhet">
-        <h1>ARBETSERFARENHET</h1>
-        
-        <div id="prao1">
-          <h2>PRAO Örbyskolan</h2>
-          <p>
-            Lärarassistent i matematik 
-            <br>
-            En vecka under 2023
-          </p>
-        </div>
-        
-        <div id="prao2">
-          <h2>Friskis och Svettis (Kinna)</h2>
-          <p>
-            Ekonomiassistent och lokalvård 
-            <br>
-            En vecka under 2022
-            <br>
-            Deltog i bokföringsprocessen och hanterade städuppgifter.
-          </p>
+          <div id="IESJ">
+            <h2>IES Johanneberg - Högstadium</h2>
+            <p>
+              2020 - 2023
+              <br />
+              <b>Årskurs:</b> 7 - 9
+              <br />
+              Stor del engelsk undervisning
+              <br />
+              <b>Slutmerit:</b> 322,5
+            </p>
+          </div>
+          <img
+            src="../img/IESJohanneberg.jpg"
+            alt="IES Johanneberg"
+            id="IESJ-img"
+          />
+
+          <hr />
+
+          <div id="IESK">
+            <h2>IES Krokslätt - Grundskola</h2>
+            <p>
+              2016 - 2020
+              <br />
+              <b>Årskurs:</b> 3 - 6
+              <br />
+              Del av undervisningen på engelska.
+            </p>
+          </div>
+          <img
+            src="../img/IESKrokslätt.jpg"
+            alt="IES Krokslätt"
+            id="IESK-img"
+          />
         </div>
       </section>
+
+      <hr />
+
+      <section id="arbetserfarenhet">
+        <h1>Arbetserfarenhet</h1>
+
+        <div id="arbetserfarenhetContent">
+          <div id="prao1">
+            <h2>PRAO Örbyskolan</h2>
+            <p>
+              Lärarassistent i matematik
+              <br />
+              En vecka under 2023
+            </p>
+          </div>
+
+          <div id="prao2">
+            <h2>Friskis och Svettis (Kinna)</h2>
+            <p>
+              Ekonomiassistent och lokalvård
+              <br />
+              En vecka under 2022
+              <br />
+              Deltog i bokföringsprocessen och hanterade städuppgifter.
+            </p>
+          </div>
+        </div>
+      </section>
+
       <p id="referenser">Referenser lämnas gärna vid förfrågan</p>
-      
     </section>
 
     <footer>
       <div class="footer-column">
-        <h3>Kontakter</h3>
+        <h3>Snabblänkar</h3>
+        <ul id="footer-links">
+          <li><a href="../index.html">Jag</a></li>
+          <li><a href="#">CV</a></li>
+          <li><a href="../html/personligt-brev.html">Personligt Brev</a></li>
+          <li><a href="../html/projekt.html">Projekt</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h3>Kontakt</h3>
         <ul>
           <li>
-            <a
-              href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=new"
-              >gmail@gmail.com</a
+            Email:
+            <a href="mailto:vinstonasen@gmail.com" target="_blank"
+              >vinstonasen@gmail.com</a
             >
           </li>
-          <li>+46 31-415 92 65</li>
-          <li>Adress: i Skogen</li>
-          <li>[Stad], Sverige 42069</li>
+          <li>
+            GitHub:
+            <a href="https://github.com/Nootato" target="_blank">@Nootato</a>
+          </li>
         </ul>
       </div>
     </footer>
 
     <script src="../js/script.js"></script>
+    <script src="../js/CV.js"></script>
   </body>
 </html>
